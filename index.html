@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>practicePhrack</title>
+    <script src="./index.js"></script>
+    <style>
+        body {
+            font-size: 36px;
+        }
+
+        select {
+            height: 36px;
+        }
+
+        /* pretty sure i took this from w3schools. TL;DR - lol. */
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #000;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+        }
+
+
+        input:checked+.slider:before {
+            transform: translateX(26px);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>practicePhrack</h1>
+    <b>Track: </b>
+    <select id="track"></select>
+    <br />
+    <b>Starting measure: </b>
+    <select id="start-pos"></select>
+    <br />
+    <b>Voice part: </b>
+    <select id="part">
+        <option value="main">Balanced</option>
+        <option value="S1">Soprano 1</option>
+        <option value="S2">Soprano 2</option>
+        <option value="A1">Alto 1</option>
+        <option value="A2">Alto 2</option>
+        <option value="T1">Tenor 1</option>
+        <option value="T2">Tenor 2</option>
+        <option value="B1">Bass 1</option>
+        <option value="B2">Bass 2</option>
+    </select>
+    <br />
+    <br/>
+    Above
+    <label class="switch">
+        <input id="part-play" type="checkbox">
+        <span class="slider"></span>
+    </label>
+    Below
+    <br />
+    <button onclick='start(document.getElementById("track").value,document.getElementById("part").value,document.getElementById("part-play").checked)'>Play</button><button onclick='stop()'>Stop</button>
+</body>
+</html>

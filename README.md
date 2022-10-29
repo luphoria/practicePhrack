@@ -35,10 +35,10 @@ Particularly notably, you will NEED to use this as a local file - NOT served ove
 ```
 
 ## Why
-I like singing in a choir. Particularly, I like auditioning for highly competitive choruses. Particularly, the [IHSMA All-State Music Festival](https://ihsma.org/all-state-music-festival/) stands out as the motivation for this software.
+I like singing in a choir. Particularly, I like auditioning for highly competitive choruses. Particularly, the [IHSMA All-State Music Festival](https://ihsma.org/all-state-music-festival/) stands out as the motivation for this software. _update: i auditioned and made it! thanks in part to my shit code :)_
 
 One common method for practicing at such competitive levels is utilizing part-based practice tracks. However, the user experience while doing this is severely lacking: You are just given around 15 files per song. One balanced, each voice part dominant, each voice part muted. 
 
 This tool attempts to make it easier to navigate, and would be especially applicable for a choir teacher giving resources to students.
 
-*~ luphoria*
+~ luphoria
